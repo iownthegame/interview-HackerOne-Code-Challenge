@@ -1,0 +1,140 @@
+a {
+  text-decoration: none;
+}
+a:visited, a:link {
+  color: white;
+}
+.hover-pointer:hover {
+  cursor: pointer;
+}
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-content {
+  padding-top: 80px;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.App-title {
+  margin-bottom: 10px;
+}
+
+/* result */
+.App-result {
+  max-height: 440px;
+  max-width: 500px;
+  overflow-y: scroll;
+  font-size: 14px;
+  color: #282c34;
+}
+
+.App-nav {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.result-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.card-title {
+  text-align: left;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card-subtitle {
+  text-align: left;
+  font-size: 14px;
+  color: #999!important;
+  margin-bottom: 0!important;
+  cursor: pointer;
+}
+
+.card-avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.card-text {
+  color: #b3d7ff;
+  font-weight: bold;
+  text-align: left;
+}
+
+.card-link:hover {
+  text-decoration: none;
+}
+
+.card-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon {
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+
+.card-icon + .card-icon {
+  margin-left: 10px;
+}
+
+.card-svg-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.card-svg {
+  height: 15px;
+  width: 15px;
+  fill: white;
+  margin-right: 5px;
+}
+
+/* hashtag result */
+.hashtag-wrapper {
+  padding: 0
+}
+
+.hashtag-content {
+  padding: 10px;
+  border: none;
+}
+
+.hashtag-name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #222;
+}
+
+.hashtag-count {
+  font-size: 14px;
+  text-align: center;
+}
