@@ -1,5 +1,8 @@
+"""common tool"""
+
 
 def get_with_default(value, default):
+    """get with default value"""
     if default is None:
         return value
     elif value is None:
@@ -9,6 +12,7 @@ def get_with_default(value, default):
     else:
         return value or default
 
+
 def filter_dict(data, keys, default_value=None):
     """filter dict"""
     if not isinstance(data, dict):
@@ -16,6 +20,7 @@ def filter_dict(data, keys, default_value=None):
     if default_value is None:
         return dict((key, data.get(key)) for key in keys)
     return dict((key, get_with_default(data.get(key), default_value)) for key in keys)
+
 
 def filter_dict_list(data_list, keys, default_value=None):
     """filter dict list"""
