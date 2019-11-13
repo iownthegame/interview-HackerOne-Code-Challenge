@@ -5,6 +5,7 @@ ENDPOINT = 'https://api.twitter.com/1.1/'
 BEAR_TOKEN = 'AAAAAAAAAAAAAAAAAAAAAKkOAwEAAAAAUFsf81T0aW%2BKRN1qfcHt%2Bx1NRtg%3DnTRuD2dcB83VQM2hsb4O7yUQa0RQFwc2UcSL9PU6StBQSxIjtC'
 
 def get_tweets(query, count=100):
+    """get tweets api"""
     headers = {
         'Authorization': f'Bearer {BEAR_TOKEN}'
     }

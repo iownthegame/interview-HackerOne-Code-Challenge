@@ -1,12 +1,13 @@
+"""search.py"""
 import logging
 
+# from searchengine.tools.common_tool import filter_dict_list
 from . import twitter_api
-from searchengine.tools.common_tool import filter_dict_list
 
 LOGGER = logging.getLogger(__name__)
 
 def get_tweets(params):
-
+    """get tweets"""
     query = params.get('query')
     count = params.get('count')
 
@@ -31,9 +32,7 @@ def get_tweets(params):
         # 'results': filter_dict_list(results, ['text', 'source']),
         'results': results
     }
-
     return res
-
 
 def _process_hashtag(hashtags, hashtag_table):
     for tag in hashtags:

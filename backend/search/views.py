@@ -1,3 +1,4 @@
+"""views for search"""
 from django.http import JsonResponse
 
 from rest_framework.decorators import api_view, permission_classes
@@ -7,6 +8,7 @@ from . import search
 @api_view(['GET'])
 @permission_classes([])
 def get_tweets(request):
+    """get tweets"""
     params = {
         'query': request.GET.get('query'),
         'count': request.GET.get('count')
